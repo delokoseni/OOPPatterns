@@ -9,12 +9,12 @@ public class Folder extends FileSystemItem{
 
     public Folder(String name) {
         super(name);
-        children = new ArrayList<FileSystemItem>();
+        children = new ArrayList<>();
     }
 
     public Folder(String name, int capacity) {
         super(name);
-        children = new ArrayList<FileSystemItem>(capacity);
+        children = new ArrayList<>(capacity);
     }
 
     @Override
