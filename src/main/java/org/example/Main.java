@@ -1,8 +1,8 @@
 package org.example;
 
-import org.example.compositor.File;
-import org.example.compositor.FileSystemItem;
-import org.example.compositor.Folder;
+import org.example.composite.File;
+import org.example.composite.FileSystemItem;
+import org.example.composite.Folder;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,11 +16,11 @@ public class Main {
         FileSystemItem textFilesFolder = new Folder("text files");
         FileSystemItem myFilesFilesFolder = new Folder("my files");
 
-        myFilesFilesFolder.addElement(textFilesFolder);
-        myFilesFilesFolder.addElement(thirdFile);
+        myFilesFilesFolder.add(textFilesFolder);
+        myFilesFilesFolder.add(thirdFile);
 
-        textFilesFolder.addElement(firstFile);
-        textFilesFolder.addElement(secondFile);
+        textFilesFolder.add(firstFile);
+        textFilesFolder.add(secondFile);
 
         List<FileSystemItem> fileSystemItemList = new ArrayList<>();
         fileSystemItemList.add(firstFile);

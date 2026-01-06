@@ -1,4 +1,4 @@
-package org.example.compositor;
+package org.example.composite;
 
 public abstract class FileSystemItem {
     private String name;
@@ -13,7 +13,7 @@ public abstract class FileSystemItem {
 
     public abstract int getSize();
 
-    public abstract void addElement(FileSystemItem fileSystemItem);
+    public abstract void add(FileSystemItem fileSystemItem);
 
-    public abstract void removeElement(FileSystemItem fileSystemItem);
+    public abstract void remove(FileSystemItem fileSystemItem);
 }
